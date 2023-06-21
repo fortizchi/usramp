@@ -21,14 +21,14 @@ or
 ```
 # install
 git clone https://github.com/fortizchi/usramp
-cd usramp
-python3 setup.py install --record files.txt
+cd usramp/dist/
+python3 -m pip install   usramp-0.1-py3-none-any.whl --upgrade --no-cache-dir
 
 # invoque as:
 x.usramp.py
 
 # uninstall
-xargs rm -rf < files.txt
+python3 -m pip uninstall usramp-0.1-py3-none-any.whl
 ```
 
 Running USRAMP
